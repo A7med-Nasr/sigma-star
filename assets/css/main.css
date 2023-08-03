@@ -381,6 +381,11 @@ section.about .about-img img {
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.contact .message textarea:focus {
+    border: 1px solid #01b8dc;
+    outline: none;
+}
+
 .contact .send {
     text-align: center;
     margin-bottom: 150px;
@@ -389,12 +394,20 @@ section.about .about-img img {
 .contact button {
     padding: 15px 25px;
     border-radius: 8px;
-    border: 1px solid white;
+    border: 1px solid transparent;
     color: white;
     background-color: #01b8dc;
     margin-top: 20px;
+    transition: 0.4s;
 }
 
+.contact button:hover {
+    color: white;
+    background-color: rgb(0, 122, 255);
+    scale: 1.1;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 122, 255, .3);
+}
 
 
 .contact .our-contact {
@@ -503,7 +516,6 @@ hr {
 .copyright .sigma {
     font-weight: bold;
 }
-
 
 .copyright a {
     color: #01b8dc;
