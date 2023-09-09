@@ -42,6 +42,11 @@ header .logo .star {
     color: #03b0db;
 }
 
+.navbar .nav .menu-btn {
+    display: none;
+    font-size: 30px;
+}
+
 header ul {
     justify-content: flex-start;
 }
@@ -78,12 +83,13 @@ header ul li a:hover {
     color: #01b8dc;
 }
 
-/* End Navbar */
+section.home {
+    padding-top: 120px;
+}
 
 section .row {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 120px;
     align-items: center;
     padding: 0 30px;
 }
@@ -209,10 +215,6 @@ section .cards .card2:hover h2 {
     transition: 0.3s;
 }
 
-/* End Section */
-
-
-
 section.about .container {
     display: flex;
     padding: 60px 30px;
@@ -243,8 +245,6 @@ section.about .about-img {
 section.about .about-img img {
     height: 400px;
 }
-
-/* End about us */
 
 .services {
     padding: 60px 30px;
@@ -300,9 +300,6 @@ section.about .about-img img {
     margin: 20px auto 30px;
 }
 
-
-/* End Services */
-
 .customers {
     padding: 50px;
     background-color: #f9f9fa;
@@ -319,8 +316,6 @@ section.about .about-img img {
     text-align: center;
     margin: 20px;
 }
-
-/* End customers */
 
 .contact .con-breif {
     margin-top: 100px;
@@ -409,7 +404,6 @@ section.about .about-img img {
     box-shadow: 0 0 20px rgba(0, 122, 255, .3);
 }
 
-
 .contact .our-contact {
     background-color: #f9f9fa;
     width: 25%;
@@ -431,7 +425,6 @@ section.about .about-img img {
     color: #5f687b;
 }
 
-
 .contact .our-contact p {
     color: #949cac;
     margin-bottom: 40px;
@@ -451,9 +444,6 @@ iframe {
     border: 2px solid rgba(1, 184, 220, 0.2);
     border-radius: 10px;
 }
-
-
-/* end contact */
 
 footer {
     margin-top: 100px;
@@ -506,7 +496,6 @@ hr {
     color: #5f687b;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-
 }
 
 .copyright .copy {
@@ -525,4 +514,500 @@ hr {
 
 .copyright a:hover {
     color: #2bdcff;
+}
+
+@media(max-width:950px) {
+    .navbar .nav {
+        flex-direction: row-reverse;
+    }
+
+    .navbar .nav .menu-btn {
+        display: block;
+    }
+
+    .navbar .nav ul {
+        display: none;
+    }
+
+    section.home {
+        padding-top: 0px;
+    }
+
+    section .row {
+        display: block;
+        padding: 0 0px;
+        width: 80%;
+        margin: auto;
+    }
+
+    section .logo-img {
+        width: 100%;
+    }
+
+    section .logo-img img {
+        margin: -50px 0 0 0px;
+    }
+
+    section .row .breif {
+        width: 100%;
+        padding-right: 0px;
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    section .row h1 {
+        font-size: 40px;
+    }
+
+    section .row button {
+        font-size: 20px;
+    }
+
+    section .cards {
+        margin-top: 50px;
+    }
+
+    section .cards i {
+        font-size: 36px;
+    }
+
+    section .cards h2 {
+        font-size: 28px;
+    }
+
+    section .cards p {
+        font-size: 18px;
+    }
+
+    section .cards .card1,
+    section .cards .card2 {
+        width: 40%;
+        padding: 20px;
+    }
+
+    section.about .container {
+        padding: 40px 0px;
+        flex-direction: column-reverse;
+    }
+
+    section.about .about-us {
+        width: 80%;
+    }
+
+    section.about .about-us h2 {
+        font-size: 34px;
+        margin-bottom: 0px;
+    }
+
+    section.about .about-us p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    section.about .about-img {
+        width: 80%;
+        margin: auto;
+    }
+
+    section.about .about-img img {
+        height: 400px;
+        width: 100%;
+    }
+
+    .services {
+        padding: 50px 0px;
+    }
+
+    .services h2 {
+        font-size: 34px;
+    }
+
+    .services p {
+        padding: 20px;
+        font-size: 19px;
+    }
+
+    .services .services-cards .row {
+        margin: 50px 0;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services .services-cards .icon-card {
+        height: 90px;
+        width: 40%;
+        margin-top: 30px;
+        transition: .4s;
+    }
+
+    .services .services-cards .icon-card i {
+        font-size: 30px;
+    }
+
+    .services .services-cards .icon-card h3 {
+        font-size: 26px;
+    }
+
+    .customers {
+        padding: 50px;
+    }
+
+    .customers h2 {
+        font-size: 34px;
+    }
+
+    .customers p {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .contact .con-breif {
+        margin-top: 70px;
+    }
+
+    .contact .con-breif h2 {
+        font-size: 34px;
+    }
+
+    .contact .con-breif p {
+        font-size: 18px;
+    }
+
+    .contact .contactss {
+        padding: 30px 10px;
+    }
+
+    .contact .contact-inputs {
+        width: 55%;
+        padding: 30px 25px;
+        flex-wrap: wrap;
+    }
+
+    .contact .contact-inputs .mail-name {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact .contact-inputs .mail-name label {
+        font-size: 20px;
+    }
+
+    .contact .contact-inputs .mail-name .name-input,
+    .contact .contact-inputs .mail-name .mail-input {
+        width: 100%;
+    }
+
+    .contact input {
+        height: 50px;
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+
+    .contact .send {
+        margin-bottom: 20px;
+    }
+
+    .contact button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    .contact .our-contact {
+        width: 27%;
+        padding: 30px 20px;
+    }
+
+    .contact .our-contact h3 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .contact .our-contact p {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .contact .our-contact i {
+        font-size: 24px;
+    }
+
+    iframe {
+        height: 250px;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 70px;
+    }
+
+    .container h2 {
+        font-size: 34px;
+        padding: 40px 0 20px 0;
+    }
+
+    .container .icons-card {
+        padding-bottom: 50px;
+    }
+
+    .container .icons-card i {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .copyright {
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:600px) {
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        font-size: 26px;
+    }
+
+    .navbar .nav .menu-btn {
+        font-size: 26px;
+    }
+
+    section.home {
+        padding-top: 0px;
+    }
+
+    section .row {
+        width: 90%;
+    }
+
+    section .logo-img {
+        width: 100%;
+    }
+
+    section .logo-img img {
+        margin: -50px 0 0 0px;
+        width: 100%;
+    }
+
+    section .row .breif {
+        margin-top: -50px;
+    }
+
+    section .row h1 {
+        font-size: 32px;
+    }
+
+    section .row p {
+        font-size: 18px;
+    }
+
+    section .row button {
+        font-size: 16px;
+    }
+
+    section .cards {
+        margin: 40px auto 20px;
+        width: 90%;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section .cards i {
+        font-size: 26px;
+    }
+
+    section .cards h2 {
+        font-size: 26px;
+    }
+
+    section .cards p {
+        font-size: 17px;
+    }
+
+    section .cards .card1,
+    section .cards .card2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section.about .container {
+        padding: 30px 0px;
+    }
+
+    section.about .about-us {
+        width: 90%;
+    }
+
+    section.about .about-us h2 {
+        font-size: 32px;
+    }
+
+    section.about .about-us p {
+        font-size: 18px;
+    }
+
+    section.about .about-img {
+        width: 90%;
+    }
+
+    section.about .about-img img {
+        height: 300px;
+    }
+
+    .services {
+        padding: 40px 0px;
+    }
+
+    .services h2 {
+        font-size: 32px;
+    }
+
+    .services p {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .services .services-cards .row {
+        margin: 40px 0;
+        width: 80%;
+        margin: auto;
+    }
+
+    .services .services-cards .icon-card {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .services .services-cards .icon-card i {
+        font-size: 24px;
+    }
+
+    .services .services-cards .icon-card h3 {
+        font-size: 24px;
+    }
+
+    .customers {
+        padding: 20px;
+    }
+
+    .customers h2 {
+        font-size: 32px;
+    }
+
+    .customers p {
+        margin: 15px 0;
+        font-size: 17px;
+    }
+
+    .contact .con-breif {
+        margin-top: 40px;
+    }
+
+    .contact .con-breif h2 {
+        font-size: 32px;
+    }
+
+    .contact .con-breif p {
+        font-size: 17px;
+    }
+
+    .contact .contactss {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact .contact-inputs {
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    .contact .contact-inputs .mail-name {
+        width: 100%;
+    }
+
+    .contact .contact-inputs label {
+        font-size: 17px;
+    }
+
+    .contact input {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contact .send {
+        margin-bottom: 0px;
+    }
+
+    .contact button {
+        font-size: 16px;
+    }
+
+    .contact .our-contact {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .contact .our-contact h3 {
+        font-size: 24px;
+    }
+
+    .contact .our-contact p {
+        margin-bottom: 25px;
+        font-size: 17px;
+    }
+
+    .contact .our-contact i {
+        font-size: 20px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .container h2 {
+        font-size: 32px;
+    }
+
+    .container .icons-card {
+        padding-bottom: 40px;
+    }
+
+    .container .icons-card i {
+        font-size: 20px;
+    }
+
+    .copyright {
+        width: 80%;
+        margin: auto;
+        font-size: 14px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .copyright .copy {
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .copyright .by {
+        width: 100%;
+    }
 }
